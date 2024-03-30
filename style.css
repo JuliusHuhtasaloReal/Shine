@@ -1,0 +1,14 @@
+#nappi{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    font-size:large;
+}
+#nappi_container{
+    height: 200px;
+    position: relative;
+}
