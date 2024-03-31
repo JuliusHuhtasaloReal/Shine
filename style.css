@@ -14,6 +14,27 @@
     animation: rainbow 5s linear infinite;
     background-color: #4CAF50;
 }
+#nappi_container{
+    height: 200px;
+    position: relative;
+}
+body{
+    background-image: url('images/confetti.gif');
+    min-height: 40rem;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scrollbars from appearing */
+    
+}
+#spawning_picture{
+    width: 5%;
+}
+.zoomed{
+    animation: zoom 30s infinite alternate;
+}
 @keyframes rainbow {
     0% {
         color: red;
@@ -33,24 +54,6 @@
     100% {
         color: violet;
     }
-}
-#nappi_container{
-    height: 200px;
-    position: relative;
-}
-body{
-    background-image: url('images/confetti.gif');
-    min-height: 40rem;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top;
-    margin: 0; /* Remove default margin */
-    overflow: hidden; /* Prevent scrollbars from appearing */
-    
-}
-.zoomed{
-    animation: zoom 30s infinite alternate;
 }
 @keyframes zoom {
     0% {
