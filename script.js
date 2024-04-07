@@ -6,8 +6,23 @@ function changeBackground() {
         'images/depsishine.png',
         'images/julle.png'
     ];
+    const audioFiles = [
+        "audio/depsin_jabatys.mp3",
+        "audio/VID_20240407032025.mp4",
+        "audio/80s.mp3",
+        "audio/leSunshine.mp4",
+        "audio/cuteSunshine.mp4",
+        "audio/mexican.mp3",
+        "audio/drill.mp3",
+        "audio/irhis.mp3",
+        "audio/minion.mp3",
+        "audio/brazil.mp3",
+        "audio/oldSunshine.mp4",
+        "audio/paivansade.mp3"
+    ];
 
     const randomIndex = Math.floor(Math.random() * images.length);
+    const randomAudioIndex = Math.floor(Math.random() * audioFiles.length);
     const selectedImage = images[randomIndex];
 
     document.body.style.backgroundImage = `url('${selectedImage}')`;
@@ -20,7 +35,7 @@ function changeBackground() {
         depsi_audio.loop = true;
     }
     else{
-        const audio = document.getElementById('audio');
+        document.getElementById('audio').src = audioFiles[randomAudioIndex];
         audio.play();
         audio.loop = true;
     }
